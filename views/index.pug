@@ -1,7 +1,9 @@
 extends layout.pug
-div(class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
-     data-src="https://desinformemonos.org/wp-content/uploads/2016/01/2.png"
-     data-srcset="https://desinformemonos.org/wp-content/uploads/2016/01/2.png 650w,
-                  https://desinformemonos.org/wp-content/uploads/2016/01/2.png 1300w"
-     data-sizes="(min-width: 650px) 650px, 100vw" uk-img)
-    h1 Bienvenido a #{title}
+block content
+     div(class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+          data-src="https://www.miamarket.it/wp2/wp-content/uploads/2018/04/cinema-02.jpg"
+          data-srcset="https://www.miamarket.it/wp2/wp-content/uploads/2018/04/cinema-02.jpg 650w, https://www.miamarket.it/wp2/wp-content/uploads/2018/04/cinema-02.jpg 1300w"
+          data-sizes="(min-width: 650px) 650px, 100vw" uk-img)
+          h1 Bienvenido al cine
+          p
+          a(class="uk-button uk-button-secondary" href="/movies") Entrar
