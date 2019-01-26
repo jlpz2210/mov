@@ -23,7 +23,7 @@ router.get("/movies", (req,res)=>{
   })
 })
 
-router.get("/movies/:title",(req,res)=>{
+router.get("/movies/:_id",(req,res)=>{
   Movie.find().then(movies=>{
     res.render("detail",req.movies)
   })
