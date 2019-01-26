@@ -17,4 +17,16 @@ router.get("/new",(req, res) => {
   res.render("done")
 })
 
+router.get("/movies", (req,res)=>{
+  Movie.find().then(movies=>{
+    res.render("list", {movies})
+  })
+})
+
+router.get("/movies/:title",(req,res)=>{
+  Movie.find().then(movies=>{
+    res.render("detail",req.movies)
+  })
+})
+
 module.exports = router;
