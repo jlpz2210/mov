@@ -1,6 +1,11 @@
-each movie in movies
-  img(src=movie.image)
-  h2=movie.title
-  a(type="button" href="/movies/"+movie._id) See more
-  
-  
+extends layout.pug
+block content
+  each movie in movies
+    div(class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid)
+        div(class="uk-card-media-left uk-cover-container")
+          img(src=movie.image alt="" uk-cover)
+          canvas(width="600" height="400")
+        div
+          div(class="uk-card-body")
+            h3(class="uk-card-title")=movie.title
+            a(type="button" href="/movies/"+movie._id) See more
